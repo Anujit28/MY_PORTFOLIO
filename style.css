@@ -1,0 +1,280 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111827;
+    z-index:1000;
+}
+
+.logo h2{
+    color:#38bdf8;
+    font-size:28px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section{
+    padding:120px 10%;
+}
+
+/* ===========================
+   HOME
+=========================== */
+
+#home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:100vh;
+    gap:50px;
+}
+
+.home-text h1{
+    font-size:30px;
+}
+
+.home-text h2{
+    font-size:55px;
+    color:#38bdf8;
+}
+
+.home-text h3{
+    margin:15px 0;
+    font-size:28px;
+}
+
+.home-text p{
+    max-width:600px;
+    margin-bottom:30px;
+}
+
+.home-image img{
+    width:350px;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 35px #38bdf8;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#38bdf8;
+    color:#111;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   TITLES
+=========================== */
+
+section h2{
+    text-align:center;
+    font-size:40px;
+    color:#38bdf8;
+    margin-bottom:50px;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+#about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skill{
+    margin:25px 0;
+}
+
+.skill h4{
+    margin-bottom:10px;
+}
+
+progress{
+    width:100%;
+    height:20px;
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+#projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.project{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.project:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #38bdf8;
+}
+
+.project h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    margin-bottom:20px;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+    background:#1e293b;
+    color:white;
+}
+
+form button{
+    background:#38bdf8;
+    color:#111;
+    padding:15px 40px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+form button:hover{
+    background:white;
+}
+
+/* ===========================
+   SOCIAL ICONS
+=========================== */
+
+.social{
+    text-align:center;
+    margin-top:40px;
+}
+
+.social a{
+    color:white;
+    font-size:28px;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#38bdf8;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:25px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+#home{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.home-image img{
+    width:250px;
+}
+
+.home-text h2{
+    font-size:42px;
+}
+
+}
