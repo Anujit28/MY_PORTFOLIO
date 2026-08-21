@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis — AI Voice Assistant | Anujit Paul</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jarvis.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>Portfolio</h2>
+    </div>
+    <nav>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="project-detail">
+
+    <a href="index.html#projects" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+
+    <div class="project-hero">
+        <h1>🤖 Jarvis — AI Voice Assistant</h1>
+        <p class="tagline">
+            A personal voice assistant powered by Groq AI (LLaMA 3.1) and Python,
+            built for hands-free interaction. Just say "Jarvis" and give your command —
+            it listens, thinks, and talks back.
+        </p>
+    </div>
+
+    <!-- ============ DEMO VIDEO ============ -->
+    <div class="project-video">
+        <h2>Demo</h2>
+        <div class="video-wrapper">
+            <video controls poster= "C:\Users\anuji\OneDrive\Documents\jarvis.png">
+                <source src= "C:\Users\anuji\OneDrive\jarvis.mp4" type="video/mp4">
+                Your browser doesn't support embedded video.
+                <a href="C:\Users\anuji\OneDrive\jarvis.mp4">Download the video instead</a>.
+            </video>
+        </div>
+        <p class="video-note">
+            Replace <code>jarvis-demo.mp4</code> with your actual screen recording —
+            see the setup note at the bottom of this page.
+        </p>
+    </div>
+
+    <!-- ============ FEATURES ============ -->
+    <div class="project-section">
+        <h2>✨ Features</h2>
+        <ul class="feature-list">
+            <li><strong>🎙️ Wake-word activation</strong> — always listening for "Jarvis"</li>
+            <li><strong>🧠 AI-powered responses</strong> via Groq's ultra-fast LLaMA 3.1 8B model</li>
+            <li><strong>🔊 Text-to-speech output</strong> — every answer is spoken aloud</li>
+            <li><strong>🌐 Built-in shortcuts</strong> — open Google, YouTube, and JioHotstar instantly</li>
+            <li><strong>💬 Conversation memory</strong> — remembers context across the whole session</li>
+            <li><strong>🧹 Markdown-clean speech</strong> — strips formatting symbols before speaking</li>
+        </ul>
+    </div>
+
+    <!-- ============ TECH STACK ============ -->
+    <div class="project-section">
+        <h2>🛠️ Tech Stack</h2>
+        <table class="tech-table">
+            <tr><th>Tool</th><th>Purpose</th></tr>
+            <tr><td>speech_recognition</td><td>Microphone input &amp; Google STT</td></tr>
+            <tr><td>pyttsx3</td><td>Offline text-to-speech engine</td></tr>
+            <tr><td>groq</td><td>LLaMA 3.1 AI responses (fast &amp; free)</td></tr>
+            <tr><td>webbrowser</td><td>Open URLs via voice command</td></tr>
+            <tr><td>Python 3.8+</td><td>Core language</td></tr>
+        </table>
+    </div>
+
+    <!-- ============ INSTALLATION ============ -->
+    <div class="project-section">
+        <h2>📦 Installation</h2>
+
+        <h4>1. Clone the repository</h4>
+        <pre><code>git clone https://github.com/your-username/jarvis-voice-assistant.git
+cd jarvis-voice-assistant</code></pre>
+
+        <h4>2. Install dependencies</h4>
+        <pre><code>pip install speechrecognition pyttsx3 groq pyaudio</code></pre>
+        <p><strong>Windows users:</strong> if <code>pyaudio</code> fails, install via wheel:</p>
+        <pre><code>pip install pipwin
+pipwin install pyaudio</code></pre>
+        <p><strong>Linux users:</strong></p>
+        <pre><code>sudo apt-get install python3-pyaudio portaudio19-dev</code></pre>
+
+        <h4>3. Add your Groq API key</h4>
+        <p>Open <code>PROJECT1.py</code> and replace the placeholder:</p>
+        <pre><code>GROQ_API_KEY = "your_groq_api_key_here"</code></pre>
+        <p>Get a free key at <a href="https://console.groq.com" target="_blank">console.groq.com</a></p>
+    </div>
+
+    <!-- ============ USAGE ============ -->
+    <div class="project-section">
+        <h2>🚀 Usage</h2>
+        <pre><code>python PROJECT1.py</code></pre>
+        <p>Jarvis will greet you. Then:</p>
+        <ul>
+            <li>Say <strong>"Jarvis"</strong> to wake it up</li>
+            <li>Wait for the confirmation prompt</li>
+            <li>Speak your command</li>
+        </ul>
+    </div>
+
+    <!-- ============ EXAMPLE COMMANDS ============ -->
+    <div class="project-section">
+        <h2>🗣️ Example Commands</h2>
+        <table class="tech-table">
+            <tr><th>You say</th><th>Jarvis does</th></tr>
+            <tr><td>"Jarvis, open Google"</td><td>Opens google.com</td></tr>
+            <tr><td>"Jarvis, open YouTube"</td><td>Opens youtube.com</td></tr>
+            <tr><td>"Jarvis, open JioHotstar"</td><td>Opens jiohotstar.com</td></tr>
+            <tr><td>"Jarvis, what is quantum computing?"</td><td>AI explanation, spoken aloud</td></tr>
+            <tr><td>"Jarvis, tell me a joke"</td><td>Responds with a joke</td></tr>
+            <tr><td>"Jarvis, goodbye"</td><td>Exits the assistant</td></tr>
+        </table>
+    </div>
+
+    <!-- ============ CONFIGURATION ============ -->
+    <div class="project-section">
+        <h2>🔧 Configuration</h2>
+        <p>You can tweak these settings at the top of <code>PROJECT1.py</code>:</p>
+        <pre><code>GROQ_MODEL = "llama-3.1-8b-instant"   # Change AI model
+recognizer.energy_threshold = 300      # Mic sensitivity (raise in noisy rooms)
+_engine.setProperty("rate", 175)       # Speech speed (words per minute)</code></pre>
+    </div>
+
+    <!-- ============ TROUBLESHOOTING ============ -->
+    <div class="project-section">
+        <h2>🐛 Troubleshooting</h2>
+        <table class="tech-table">
+            <tr><th>Problem</th><th>Fix</th></tr>
+            <tr><td>No sound / TTS silent</td><td>Update pyttsx3: <code>pip install --upgrade pyttsx3</code></td></tr>
+            <tr><td>Microphone not detected</td><td>Check mic permissions; install pyaudio correctly</td></tr>
+            <tr><td>Groq API error</td><td>Verify your API key and internet connection</td></tr>
+            <tr><td>"jarvis" not recognised</td><td>Speak clearly; adjust energy_threshold</td></tr>
+        </table>
+    </div>
+
+    <!-- ============ PROJECT STRUCTURE ============ -->
+    <div class="project-section">
+        <h2>📁 Project Structure</h2>
+        <pre><code>jarvis-voice-assistant/
+│
+├── PROJECT1.py       # Main assistant script
+└── README.md         # You are here</code></pre>
+    </div>
+
+    <!-- ============ LINKS ============ -->
+    <div class="project-section project-links">
+        <a href="https://github.com/anujit28" target="_blank" class="btn">
+            <i class="fab fa-github"></i> View on GitHub
+        </a>
+        <a href="index.html#projects" class="btn btn-outline">
+            <i class="fas fa-arrow-left"></i> Back to Projects
+        </a>
+    </div>
+
+    <p class="license-note">
+        📄 Open source under the MIT License · 👤 Built by Anujit · Built with ❤️ and Python
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 Anujit Paul<br>All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
